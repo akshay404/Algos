@@ -5,7 +5,7 @@ using namespace std;
 struct attr
 {
 	int upvotes[1000]; 							//upvotes
-	int cash; 									//Balance
+	int cash; 								//Balance
 	int inv[1000]; 								//Inventory of each item
 	int price[1000]; 							//price of each item
 	int id[1000];								//id of item
