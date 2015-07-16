@@ -12,13 +12,10 @@ void maxSubArraySum(int a[], int size)
      if(max_ending_here < 0)
          max_ending_here = 0;
  
-     /* Do not compare for all elements. Compare only   
-        when  max_ending_here > 0 */
      else if (max_so_far < max_ending_here)
      {
          max_so_far = max_ending_here;
          e_pos = i;
-         cout<<" "<<e_pos<<" ";
       }
    }
    int str;
@@ -28,7 +25,7 @@ void maxSubArraySum(int a[], int size)
      if(max_so_far == 0)
        str=i;
    }
-   cout<<"Buy on "<<str+1<<" sell on "<<e_pos+1;
+   cout<<"Buy on "<<str+1<<" sell on "<<e_pos+1<<endl;
 }
 
 int main()
